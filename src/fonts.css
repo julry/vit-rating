@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'TastyGothic';
+    src: url('./assets/fonts/Tasty-Gothic_Demi.otf') format('opentype'),
+    local('Tasty-Gothic_Demi'), local('TastyGothicDemi'), local('Tasty Gothic Demi');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TastyGothic';
+    src: url('./assets/fonts/Tasty-Gothic_Book.otf') format('opentype'),
+    local('Tasty-Gothic_Book'), local('TastyGothicBook'), local('Tasty Gothic Book');
+    font-weight: 300;
+    font-style: normal;
+}
