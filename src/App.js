@@ -257,10 +257,10 @@ export function App() {
     const [search, setSearch] = useState('')
 
     const groups = useMemo(() => {
-        const sorted = [...(leaderboard)].sort((a, b) => b.points - a.points);
+        const sorted = [...(leaderboard)].filter(({id}) => id).sort((a, b) => +b.points - +a.points);
 
         if (search) {
-            const filtered = sorted.filter(item => item?.id.toString().toLowerCase().includes(search.toLowerCase()))
+            const filtered = sorted.filter(item => item?.id?.toString().toLowerCase().includes(search.toLowerCase()))
 
             return filtered.slice(0, SPECIAL_GROUP_AMOUNT)
         }
