@@ -5,7 +5,7 @@ import logo from './assets/images/logo.svg'
 
 const LEADERBOARD_ENDPOINT_URL = "https://games-admin.fut.ru/api/";
 const LEADERBOARD_PROJECT_ID = "runner-vkusno-i-tochka";
-const SPECIAL_GROUP_AMOUNT = 10;
+const SPECIAL_GROUP_AMOUNT = 50;
 const MIN_DESKTOP_WIDTH = 992
 
 const ftClient = new FTClient(LEADERBOARD_ENDPOINT_URL, LEADERBOARD_PROJECT_ID);
@@ -257,7 +257,7 @@ export function App() {
     const [search, setSearch] = useState('')
 
     const groups = useMemo(() => {
-        const sorted = [...(leaderboard)].filter(({id}) => id).sort((a, b) => +b.points - +a.points);
+        const sorted = [...(leaderboard)].filter(({id}) => id).sort((a, b) => +(b.points ?? 0) - +(a.points ?? 0));
 
         if (search) {
             const filtered = sorted.filter(item => item?.id?.toString().toLowerCase().includes(search.toLowerCase()))
@@ -305,7 +305,7 @@ export function App() {
                             <Item key={itemIndex}>
                                 <span>{itemIndex + 1}</span>
                                 <span>{item.id}</span>
-                                <span>{item?.points?.toString().padStart(2, '0')}</span>
+                                <span>{(item?.points ?? 0).toString().padStart(2, '0')}</span>
                             </Item>
                         ))}
                     </List>

@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "./static/css/main.921880a7.css",
-    "main.js": "./static/js/main.4ae37a1a.js",
+    "main.js": "./static/js/main.3e70fe39.js",
     "static/media/Tasty-Gothic_Demi.otf": "./static/media/Tasty-Gothic_Demi.476fc64bf7da4d10e35d.otf",
     "static/media/Tasty-Gothic_Book.otf": "./static/media/Tasty-Gothic_Book.dc38ae256380eb83cdf5.otf",
     "static/media/logo.svg": "./static/media/logo.a50deb53bdf9920dfeaf7e9f9a0b252e.svg",
     "index.html": "./index.html",
     "main.921880a7.css.map": "./static/css/main.921880a7.css.map",
-    "main.4ae37a1a.js.map": "./static/js/main.4ae37a1a.js.map"
+    "main.3e70fe39.js.map": "./static/js/main.3e70fe39.js.map"
   },
   "entrypoints": [
     "static/css/main.921880a7.css",
-    "static/js/main.4ae37a1a.js"
+    "static/js/main.3e70fe39.js"
   ]
 }
