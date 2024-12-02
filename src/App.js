@@ -316,10 +316,9 @@ export function App() {
 
     const getData = async () => {
         try {
-            const { week } = await ftClient.loadProjectState();
             const result = await ftClient.loadRecordsPublicData();
             
-            setLeaderboard(result.map(d => ({...d, points: d[`scoreWeek${week}`]})));
+            setLeaderboard(result.map(d => ({...d, points: d?.scoreTotal})));
         } catch {
             setIsError(true);
         }
