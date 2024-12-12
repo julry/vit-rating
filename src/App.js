@@ -5,7 +5,7 @@ import logo from './assets/images/logo.svg'
 
 const LEADERBOARD_ENDPOINT_URL = "https://games-admin.fut.ru/api/";
 const LEADERBOARD_PROJECT_ID = "runner-vkusno-i-tochka";
-const SPECIAL_GROUP_AMOUNT = 100;
+const SPECIAL_GROUP_AMOUNT = 50;
 const MIN_DESKTOP_WIDTH = 992
 
 const ftClient = new FTClient(LEADERBOARD_ENDPOINT_URL, LEADERBOARD_PROJECT_ID);
